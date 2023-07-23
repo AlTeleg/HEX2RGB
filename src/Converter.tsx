@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import * as hex2rgb from 'hex2rgb';
 
 export default function Converter(): JSX.Element {
-    const [color, setColor] = useState('gray');
+    const [color, setColor] = useState('#A9A9A9');
     const hexRegExp = /^#[0-9A-F]{6}$/i;
     
     const convertHEX = (event: React.ChangeEvent<HTMLInputElement>) => {
