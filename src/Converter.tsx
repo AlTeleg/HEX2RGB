@@ -18,11 +18,14 @@ export default function Converter(): JSX.Element {
       setColor(hex2rgb(value).rgbString);
       return hex2rgb(value).rgbString
     }
+    const submitForm = (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+    }
 
     return (
     <div style={{backgroundColor: color || '#FFFFFF' }} className='convertor-background'>
       <div className='convertor-div'>
-          <form >
+          <form onSubmit={submitForm}>
             <input onChange={convertHEX} type='text' className='hex-input'/>
             <p className='hex-output'>{color}</p>
           </form>
