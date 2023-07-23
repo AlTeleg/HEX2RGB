@@ -20,7 +20,7 @@ export default function Converter(): JSX.Element {
     }
 
     return (
-    <div style={{backgroundColor: color || 'white' }} className='convertor-background'>
+    <div style={{backgroundColor: color || '#FFFFFF' }} className='convertor-background'>
       <div className='convertor-div'>
           <form >
             <input onChange={convertHEX} type='text' className='hex-input'/>
