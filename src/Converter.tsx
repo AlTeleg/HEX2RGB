@@ -20,7 +20,7 @@ export default function Converter(): JSX.Element {
     }
 
     return (
-    <div style={{backgroundColor: color || '#FFFFFF' }} className='convertor-background'>
+    <div style={{backgroundColor: color === 'Ошибка!'? '#E94B35' : color || '#FFFFFF' }} className='convertor-background'>
       <div className='convertor-div'>
           <form onSubmit={event => event.preventDefault()}>
             <input onChange={convertHEX} type='text' className='hex-input'/>
